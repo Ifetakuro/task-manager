@@ -2,6 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Project Overview
+
+This is a Todo App built using React and Typescript that allows users to manage tasks effectively. Users can add, edit, delete tasks, and mark tasks as complete or incomplete.
+
+## Installation
+
+1. Clone the repository:
+   git clone https://github.com/Ifetakuro/task-manager.git
+   cd task-manager
+
+2. Install Dependencies
+   Run `npm install`
+
+3. Start the application
+   Run `npm start`
+
 ## Available Scripts
 
 In the project directory, you can run:
