@@ -8,8 +8,8 @@ This is a Todo App built using React and Typescript, which allows users to manag
 
 ## Installation
 
-1. Clone the repository:
-   git clone https://github.com/Ifetakuro/task-manager.git\
+1. Clone the repository:\
+   git clone https://github.com/Ifetakuro/task-manager.git \
    cd task-manager
 
 2. Install Dependencies
