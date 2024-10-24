@@ -30,8 +30,20 @@ export const initialTodos: Todo[] = [
   { id: "1257", done: false, todo: "Burger BBQ with family" },
 ];
 
+const LOCAL_STORAGE_KEY = "todos";
+
+const getStoredTodos = (): Todo[] => {
+  try {
+    const storedTodos = localStorage.getItem(LOCAL_STORAGE_KEY);
+    return storedTodos ? JSON.parse(storedTodos) : initialTodos;
+  } catch (error) {
+    console.error("Failed to parse todos from localStorage:", error);
+    return initialTodos;
+  }
+};
+
 export const TodoProvider = ({ children }: { children: ReactNode }) => {
-  const [todos, setTodos] = useState<Todo[]>(initialTodos);
+  const [todos, setTodos] = useState<Todo[]>(getStoredTodos);
   const [currentEdit, setCurrentEdit] = useState<Todo | null>(null);
 
   useEffect(() => {
@@ -39,6 +51,10 @@ export const TodoProvider = ({ children }: { children: ReactNode }) => {
       setCurrentEdit(todos[0]);
     }
   }, []);
+
+  useEffect(() => {
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(todos));
+  }, [todos]);
 
   const addTodo = (todoText: string) => {
     const newTodo: Todo = {
