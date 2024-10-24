@@ -1,0 +1,35 @@
+.advert {
+  height: 130px;
+  background-color: #cde53d;
+  padding: 20px 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  border: 2px solid #9eb031;
+
+  .description {
+    padding: 10px;
+    span {
+      color: #071d55;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 19.05px;
+    }
+  }
+
+  .currency-box {
+    display: block;
+    background-color: #071d55;
+    height: 64px;
+    width: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f2c94c;
+
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+}

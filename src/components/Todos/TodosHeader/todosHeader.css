@@ -1,0 +1,24 @@
+.todos-header {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+
+  img {
+    border-radius: 50%;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-style: italic;
+    font-size: 25px;
+    font-weight: 100;
+    color: #fff;
+    max-width: 221px;
+  }
+}

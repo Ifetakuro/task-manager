@@ -1,0 +1,27 @@
+.todos-section {
+  position: relative;
+
+  .todos {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .add-button {
+    outline: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #123eb1;
+    background-color: #3556ab;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+  }
+}

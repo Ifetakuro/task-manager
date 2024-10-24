@@ -1,0 +1,29 @@
+.add-todo {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 123px);
+  padding: 20px 30px;
+
+  label {
+    font-size: 16px;
+    line-height: 19.44px;
+    font-weight: 400;
+    color: #000;
+
+    input {
+      outline: none;
+      border: 1px solid #cbcbcb;
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%;
+      height: 50px;
+      margin-top: 10px;
+    }
+  }
+
+  .action-btns {
+    margin-top: auto;
+    display: flex;
+    gap: 15px;
+  }
+}
