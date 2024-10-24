@@ -37,7 +37,6 @@ const getStoredTodos = (): Todo[] => {
     const storedTodos = localStorage.getItem(LOCAL_STORAGE_KEY);
     return storedTodos ? JSON.parse(storedTodos) : initialTodos;
   } catch (error) {
-    console.error("Failed to parse todos from localStorage:", error);
     return initialTodos;
   }
 };
